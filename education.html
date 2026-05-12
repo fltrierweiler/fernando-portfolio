@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação - Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu principal, presente em todas as 4 páginas -->
+    <nav>
+        <button id="menu-toggle" class="menu-toggle btn">Menu</button>
+        <div class="nav-links" id="nav-links">
+            <a href="about.html" data-i18n="navAbout"></a>
+            <a href="education.html" data-i18n="navEducation" style="font-weight: bold; border-bottom: 2px solid var(--border-black);"></a>
+            <a href="portfolio.html" data-i18n="navPortfolio"></a>
+            <a href="contact.html" data-i18n="navContact"></a>
+        </div>
+        <div class="controls">
+            <button id="theme-toggle" class="btn" data-i18n="themeToggle"></button>
+            <button id="lang-toggle" class="btn" data-i18n="langToggle"></button>
+        </div>
+    </nav>
+
+    <!-- Estrutura de janela Retro -->
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">education.txt - Notepad</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close">X</button>
+            </div>
+        </div>
+        <div class="window-body" style="background-color: white; color: black; font-family: 'Courier New', Courier, monospace; padding-inline: 30px;">
+                <h2 data-i18n="eduTitle"></h2>
+            <br>
+            <h3 data-i18n="eduTechTitle"></h3>
+            <p data-i18n="eduTechContent"></p>
+            <br>
+            <h3 data-i18n="eduLangTitle"></h3>
+            <ul>
+                <li data-i18n="eduLang1"></li>
+                <li data-i18n="eduLang2"></li>
+                <li data-i18n="eduLang3"></li>
+            </ul>
+            <br>
+            <h3 data-i18n="eduEduTitle"></h3>
+            <ul>
+                <li data-i18n="eduEdu1"></li>
+                <li data-i18n="eduEdu2"></li>
+                <li data-i18n="eduEdu3"></li>
+                <li data-i18n="eduEdu4"></li>
+            </ul>
+            <img
+                src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTNrYmNha3dpcTY5bHpreHRpYWd2ZHAzdmhpbGxoN2dvY2J0ajl3ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13V60VgE2ED7oc/giphy.gif"
+                alt="Clippy"
+                style="width: 150px; float: right;"
+            >
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

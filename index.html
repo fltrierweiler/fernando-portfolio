@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Boot</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Simulação de tela de boot/landing page -->
+    <div class="window" style="text-align: center;">
+        <div class="title-bar">
+            <div class="title-bar-text">System.exe</div>
+        </div>
+        <div class="window-body" style="align-content: center;">
+            <img
+                src="https://blob.gifcities.org/gifcities/6ZWZ5XLNKO47TMULWH7WMZLVTDEIIXTJ.gif"
+                alt="Retro Computer"
+                style="margin-bottom: 20px;"
+            >
+            <h1 data-i18n="indexTitle"></h1>
+            <p data-i18n="indexSubtitle" style="margin: 20px 0;"></p>
+            
+            <a href="about.html" style="text-decoration: none;">
+                <button class="btn" style="font-size: 16px; padding: 10px 20px;" data-i18n="indexEnterBtn"></button>
+            </a>
+            
+            <div style="margin-top: 30px; display: flex; justify-content: center; gap: 10px;">
+                <button id="theme-toggle" class="btn" data-i18n="themeToggle"></button>
+                <button id="lang-toggle" class="btn" data-i18n="langToggle"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Script de i18n possui inicialização e dados de tradução -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

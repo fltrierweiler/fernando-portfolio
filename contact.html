@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu principal, presente em todas as 4 páginas -->
+    <nav>
+        <button id="menu-toggle" class="menu-toggle btn">Menu</button>
+        <div class="nav-links" id="nav-links">
+            <a href="about.html" data-i18n="navAbout"></a>
+            <a href="education.html" data-i18n="navEducation"></a>
+            <a href="portfolio.html" data-i18n="navPortfolio"></a>
+            <a href="contact.html" data-i18n="navContact" style="font-weight: bold; border-bottom: 2px solid var(--border-black);"></a>
+        </div>
+        <div class="controls">
+            <button id="theme-toggle" class="btn" data-i18n="themeToggle"></button>
+            <button id="lang-toggle" class="btn" data-i18n="langToggle"></button>
+        </div>
+    </nav>
+
+    <!-- Estrutura de janela Retro -->
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Outlook Express - New Message</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close">X</button>
+            </div>
+        </div>
+        <div class="window-body contact-body">
+            <div class="container">
+                <div>
+                    <h2 data-i18n="contactTitle" style="margin-bottom: 15px;"></h2>
+                    <p data-i18n="contactDesc"></p>
+                </div>
+                <img src="https://blob.gifcities.org/gifcities/2GUWPK6P5TWNCHANZ74D6YR42OPQG5N6.gif" alt="Mail"/>
+            </div>
+            <form id="contact-form">
+                <div>
+                    <label for="name" data-i18n="contactName"></label>
+                    <input type="text" id="name" name="name" data-i18n-placeholder="contactName">
+                </div>
+                
+                <div>
+                    <label for="email" data-i18n="contactEmail"></label>
+                    <input type="email" id="email" name="email" data-i18n-placeholder="contactEmail">
+                </div>
+                
+                <div class="message-field">
+                    <label for="message" data-i18n="contactMessage"></label>
+                    <textarea id="message" name="message" rows="5" data-i18n-placeholder="contactMessage"></textarea>
+                </div>
+                
+                <div class="form-actions" style="text-align: right; margin-top: 10px;">
+                    <button type="submit" class="btn" data-i18n="contactSend"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal instanciado dinamicamente via JS -->
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

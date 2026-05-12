@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu principal, presente em todas as 4 páginas -->
+    <nav>
+        <button id="menu-toggle" class="menu-toggle btn">Menu</button>
+        <div class="nav-links" id="nav-links">
+            <a href="about.html" data-i18n="navAbout" style="font-weight: bold; border-bottom: 2px solid var(--border-black);">Sobre mim</a>
+            <a href="education.html" data-i18n="navEducation"></a>
+            <a href="portfolio.html" data-i18n="navPortfolio"></a>
+            <a href="contact.html" data-i18n="navContact"></a>
+        </div>
+        <div class="controls">
+            <button id="theme-toggle" class="btn" data-i18n="themeToggle"></button>
+            <button id="lang-toggle" class="btn" data-i18n="langToggle"></button>
+        </div>
+    </nav>
+
+    <!-- Estrutura de janela Retro -->
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">about.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close">X</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h1 data-i18n="aboutTitle" style="margin-bottom: 15px;"></h1>
+            
+            <fieldset style="padding: 15px; border-top: 2px solid var(--border-dark); border-left: 2px solid var(--border-dark); border-bottom: 2px solid var(--border-light); border-right: 2px solid var(--border-light);">
+                <legend style="padding: 0 5px;">Fernando Luiz Trierweiler</legend>
+                <img
+                    src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjI4a2l2YnNiOWtraDk3ZDlqY2lyOHhkYTA5MW1hcjI3ZzVzZjc4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Tz30dcgKE3GCTYpxol/giphy.gif"
+                    alt="Dev GIF"
+                    width="250"
+                    style="display: block; margin: 0 auto;"
+                >
+                <p data-i18n="aboutContent" style="margin-top: 20px; text-align: justify;"></p>
+                <div style="clear: both;"></div>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Projetos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu principal, presente em todas as 4 páginas -->
+    <nav>
+        <button id="menu-toggle" class="menu-toggle btn">Menu</button>
+        <div class="nav-links" id="nav-links">
+            <a href="about.html" data-i18n="navAbout"></a>
+            <a href="education.html" data-i18n="navEducation"></a>
+            <a href="portfolio.html" data-i18n="navPortfolio" style="font-weight: bold; border-bottom: 2px solid var(--border-black);"></a>
+            <a href="contact.html" data-i18n="navContact"></a>
+        </div>
+        <div class="controls">
+            <button id="theme-toggle" class="btn" data-i18n="themeToggle"></button>
+            <button id="lang-toggle" class="btn" data-i18n="langToggle"></button>
+        </div>
+    </nav>
+
+    <!-- Estrutura de janela Retro -->
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">C:\Projects\Portfolio</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close">X</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2 data-i18n="portTitle" style="margin-bottom: 10px;"></h2>
+            <p data-i18n="portDesc" style="margin-bottom: 20px;"></p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <!-- Item 1 -->
+                <div style="border: 2px outset var(--border-light); padding: 10px; text-align: center;">
+                    <img
+                        src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExajE1NGd1cThtcTN1djh2emczN2dicmU2ZGx3NW10NDkwa2M4bG91MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cNFFHJ5Ki8KBJbS2Lt/giphy.gif"
+                        alt="Project 1"
+                        height="60"
+                        style="margin-bottom: 10px;"
+                    >
+                    <p data-i18n="portItem1" style="font-weight: bold;"></p>
+                    <P data-i18n="portItem1Desc" style="font-size: 14px; margin: 10px 0;"></P>
+                    <a href="https://github.com/fltrierweiler/JS-Breakout" style="color: var(--link-color);" data-i18n="detailBtn"></a>
+                </div>
+
+                <!-- Item 2 -->
+                <div style="border: 2px outset var(--border-light); padding: 10px; text-align: center;">
+                    <img src="https://blob.gifcities.org/gifcities/5BT5FRDY6M4TCRKQYOBD564SULKWGJA7.gif"
+                        alt="Project 2"
+                        height="60"
+                        style="margin-bottom: 10px;"
+                    >
+                    <p data-i18n="portItem2" style="font-weight: bold;"></p>
+                    <P data-i18n="portItem2Desc" style="font-size: 14px; margin: 10px 0;"></P>
+                    <a href="https://github.com/fltrierweiler/Razor-MVC" style="color: var(--link-color);" data-i18n="detailBtn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
